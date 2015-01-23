@@ -33,6 +33,7 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 public class MainActivity extends ActionBarActivity {
 
 	Button btnSend;
+	
 	TextView txtvId;
 	public static final String REGISTRATION = "registration";
 	private static final String GCM_PROJECT_ID = "846240793675";
@@ -47,6 +48,7 @@ public class MainActivity extends ActionBarActivity {
 		txtvId=(TextView)findViewById(R.id.txtvGcm);    
 		regId=getRegistrationId(MainActivity.this);
 		if(checkPlayServices())
+			System.out.println("Good");
 		{
 
 
